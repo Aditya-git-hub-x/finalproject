@@ -66,7 +66,7 @@ public class ProductControllerTest {
 
     @Test
     void getAllProducts_ShouldReturnListOfProductResponses_WhenProductsExist() throws Exception {
-        // Arrange
+
         ProductResponse productResponse1 = new ProductResponse("1", "iPhone1", "Description1", "SKU123", BigDecimal.valueOf(100.00));
         ProductResponse productResponse2 = new ProductResponse("2", "iPhone2", "Description2", "SKU124", BigDecimal.valueOf(200.00));
         when(productService.getAllProducts()).thenReturn(List.of(productResponse1, productResponse2));
